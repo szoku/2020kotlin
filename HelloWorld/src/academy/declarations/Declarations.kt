@@ -4,6 +4,7 @@ typealias EmployeeSet = Set<Employee>
 
 fun main(args: Array<String>) {
 
+    //Equality
     val employeeOne = Employee("Mary", 1)
     val employeeTwo = Employee("John", 2)
     val employeeThree = Employee("John", 2)
@@ -21,6 +22,19 @@ fun main(args: Array<String>) {
     println(employeeTwo != employeeThree)
     println(employeeTwo !== employeeThree)
 
+    //Bit operators
+    val x = 0x00101101
+    val y = 0x11011011
+
+    x or y
+
+    var something:Any = employeeFour
+    if (something is Employee) {
+        //val newEmployee = something as Employee
+        println(something.name)
+    }
+
+    //Declarations
     var number: Int
     number = 10
     number = 20
