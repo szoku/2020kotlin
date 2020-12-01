@@ -11,4 +11,11 @@ fun main(args: Array<String>) {
     } else {
         str.toUpperCase()
     }
+
+    val someStr = null
+
+    //?: Elvis operator
+    val str2: String = someStr ?: "This is the default value"
+
+    println(str2)
 }
