@@ -18,4 +18,8 @@ fun main(args: Array<String>) {
     val str2: String = someStr ?: "This is the default value"
 
     println(str2)
+
+    val something: Any = arrayOf(1, 2, 3, 4)
+    val str3 = something as? String
+    println(str3)
 }
