@@ -22,4 +22,7 @@ fun main(args: Array<String>) {
     val something: Any = arrayOf(1, 2, 3, 4)
     val str3 = something as? String
     println(str3)
+
+    println(str3?.toUpperCase())
+
 }
