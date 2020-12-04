@@ -11,4 +11,8 @@ public class DummyClass {
             System.out.println(number);
         }
     }
+
+    public void setCharArray(char[] charArray) {
+        char[] JavaCharArray = charArray;
+    }
 }
