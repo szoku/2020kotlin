@@ -18,6 +18,11 @@ fun main(args: Array<String>) {
 
     println(str3)
 
+    val nullableInts = arrayOfNulls<Int>(5)
+    for (i in nullableInts) {
+        println(i)
+    }
+    println(nullableInts[3].toString())
 }
 
 fun printText(text: String) {
