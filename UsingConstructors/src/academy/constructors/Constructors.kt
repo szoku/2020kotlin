@@ -5,6 +5,8 @@ fun main(args: Array<String>) {
 
     val emp = Employee("John")
     println(emp.firstName)
+    emp.fullTime = false;
+    println(emp.fullTime)
 
     val emp2 = Employee("Joe")
     println(emp2.firstName)
@@ -18,8 +20,17 @@ fun main(args: Array<String>) {
 
 }
 
-class Employee(val firstName: String, var fullTime: Boolean = true) {
+class Employee(val firstName: String, fullTime: Boolean = true) {
 
+    var fullTime = fullTime
+    get() {
+        println("Running the custom get")
+        return field
+    }
+    set(value) {
+        println("Running the custom set")
+        field = value
+    }
 }
 
 class Demo {
