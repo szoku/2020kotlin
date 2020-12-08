@@ -1,7 +1,10 @@
 package academy.constructors
 
+val MY_CONSTANT = 100
+
 fun main(args: Array<String>) {
 
+    println(MY_CONSTANT)
 
     val emp = Employee("John")
     println(emp.firstName)
