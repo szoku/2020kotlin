@@ -15,6 +15,8 @@ fun main(args: Array<String>) {
     val manyCars = arrayOf(car1, car2, car3)
     //spread operator * -> rozpakowuje tablice do funckji varargs, bo nie mozna przekazac bezpsorednio jak w javie
     printColors(*manyCars)
+
+    println(Utils().upperFirstAndLast("this is all small"))
 }
 
 fun printColors(vararg cars: Car) {
