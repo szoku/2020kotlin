@@ -32,7 +32,7 @@ fun printColors(vararg cars: Car) {
     }
 }
 
-fun labelMultiply(operand1: Int, operand2: Int,
+inline fun labelMultiply(operand1: Int, operand2: Int,
                   label: String = "The answer is:"): String =
     "$label ${operand1 * operand2}"
 
