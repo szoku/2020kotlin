@@ -16,3 +16,14 @@ open class LaserPrinter(modelName: String, pagePerMinute: Int): Printer(modelNam
     final override fun printModel() = println("The model name of this laser printer is $modelName")
     override fun bestSellingPrice(): Double = 129.99
 }
+
+open class Something {
+    val someProperty: String
+    constructor(someParameter: String) {
+        someProperty = someParameter
+    }
+}
+
+class SomethingElse: Something {
+    constructor(someOtherParameter: String): super(someOtherParameter)
+}
