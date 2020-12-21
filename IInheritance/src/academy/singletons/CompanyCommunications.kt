@@ -3,6 +3,8 @@ package academy.singletons
 import java.time.Year
 
 fun main() {
+    println(Departments.ACCOUNTING.getDepinfo())
+
     println(CompanyCommunications.getTagLine())
     println(CompanyCommunications.getCopyrightLine())
 
@@ -18,6 +20,15 @@ fun main() {
             return "This is from mustImplement: ${num * 100}"
         }
     })
+}
+
+enum class Departments(val fullName: String, val numEmployeees: Int) {
+    HR("Human Resources", 5),
+    IT("Information Technology", 10),
+    ACCOUNTING ("Accounting", 3),
+    SALES ("Sales", 20);
+
+    fun getDepinfo() = "The $fullName department has $numEmployeees"
 }
 
 object CompanyCommunications {
