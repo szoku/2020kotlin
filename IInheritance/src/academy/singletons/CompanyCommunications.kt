@@ -12,6 +12,12 @@ fun main() {
     val someClass2 = SomeClass.upperOrLowerCase("this isn't the string as is", false)
     println(someClass1.someString)
     println(someClass2.someString)
+
+    wantsSomeInteface(object: SomeInterface{
+        override fun mustImplement(num: Int): String {
+            return "This is from mustImplement: ${num * 100}"
+        }
+    })
 }
 
 object CompanyCommunications {
@@ -39,4 +45,12 @@ class SomeClass private constructor(val someString: String) {
             }
         }
     }
+}
+
+interface SomeInterface {
+    fun mustImplement(num: Int): String
+}
+
+fun wantsSomeInteface(si: SomeInterface) {
+    println("Printing from some Interface ${si.mustImplement(22)}")
 }
