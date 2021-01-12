@@ -31,6 +31,8 @@ enum class Departments(val fullName: String, val numEmployeees: Int) {
     fun getDepinfo() = "The $fullName department has $numEmployeees"
 }
 
+fun topLevel(str: String) = println("Top level function: $str")
+
 object CompanyCommunications {
 
     val currentYear = Year.now().value
