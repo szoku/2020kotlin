@@ -14,7 +14,7 @@ interface MySubInterface: MyInterface {
 
     fun mySubFunction(num: Int): String
 }
-open class Something: MySubInterface {
+open class Somethinprg: MySubInterface {
     val someProperty: String
     override val number: Int = 25
 
